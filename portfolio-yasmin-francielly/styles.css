@@ -1,0 +1,345 @@
+/* ESTILO GERAL*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #eadeed;
+    height: 100vh;}
+    @media screen and (max-width: 800px) {
+        .left, .main, .right {
+          width: 100%; 
+        }
+    }
+
+
+.interface{
+max-width: 1280px;
+margin: 0 auto;
+}
+
+header{
+    padding: 40px ;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+header nav li{
+    display: inline-block;
+    padding: 0 40px;
+}
+.menu-desktop{
+
+}
+
+header .contato button{
+   
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #8038bf;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+header a:hover {
+    color:#9e54e4;
+    transform:scale(1.2);
+}
+
+h1{
+    margin:0;
+    padding:0;
+    color:#8038bf;
+   
+}
+p{
+    margin:20px;
+    padding:20px;
+    color: #2e024c;
+    font-size: 20px;
+}
+.duas{
+    width: 600px; 
+    height: auto;
+    border-radius: 20px; 
+    box-shadow: 5px 5px 15px #e8a8ff;
+    display: flex;
+    
+}
+.footer {
+    background-color:#9e54e4;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;}
+    @media screen and (max-width: 800px) {
+        .left, .main, .right {
+          width: 100%; 
+        }
+    }
+
+
+    .footer {
+        background-color: #9e54e4;
+        color: #ffffff;
+        text-align: center;
+        padding: 50px 20px;
+        margin-top: 50px;
+        font-family: Arial, sans-serif;
+    }
+    
+    .footer-content {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 10px 15px;
+        transition: 0.3s;
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+    
+    .footer p {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+        opacity: 0.8;
+    }
+    
+    /* Responsividade para telas menores */
+    @media screen and (max-width: 600px) {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .footer a {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    
+        .footer p {
+            font-size: 12px;
+        }
+    }
+    
+.link{
+    padding: 10px 40px;
+    color:#000000;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ad5ff6;
+    border: 0;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.aumentoletra{
+    font-size: 20px;
+  
+}
+i{
+    color:#000000;
+    text-decoration: none;
+}
+
+h3{
+    margin:0;
+    padding:0;
+    color:#ffffff;
+}
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e9fb;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(158, 84, 228, 0.5);
+  }
+  
+  h1 {
+    color: #8038bf;
+    text-align: center;
+  }
+  
+  .field {
+    border: 2px solid #9e54e4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #9e54e4;
+  }
+  
+  /* Estilo dos inputs e selects */
+  input[type=text],
+  input[type=number],
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #9e54e4;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo específico para o campo "Mensagem" */
+  #username {
+    height: 100px;
+  }
+  
+  /* Botões */
+  input[type=submit],
+  input[type=reset] {
+    width: 48%;
+    background-color: #9e54e4;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 1%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type=submit]:hover,
+  input[type=reset]:hover {
+    background-color: #8038bf;
+  }
+  
+  /* Layout botões lado a lado */
+  .botoes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Responsividade geral */
+@media (max-width: 768px) {
+
+    /* Container principal */
+    .interface {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    /* Menu desktop vira colunado ou escondido se quiser */
+    .menu-desktop ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+      margin: 20px 0;
+    }
+  
+    /* Imagem da logo */
+    .logo img {
+      max-width: 150px;
+      height: auto;
+    }
+  
+    /* Botão de contato */
+    .contato button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    /* Título principal */
+    .toposite h1 {
+      font-size: 24px;
+    }
+  
+    /* Texto do parágrafo */
+    .toposite p {
+      font-size: 16px;
+      padding: 0 15px;
+    }
+  
+    /* Imagem centralizada */
+    .duas {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    /* Footer responsivo */
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .footer-content nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 15px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .toposite h1 {
+      font-size: 20px;
+    }
+  
+    .toposite p {
+      font-size: 14px;
+    }
+  
+    .contato button {
+      width: 100%;
+    }
+  
+    .menu-desktop ul {
+      gap: 5px;
+    }
+  
+    .footer-content h2 {
+      font-size: 18px;
+    }
+  }
+  
+  

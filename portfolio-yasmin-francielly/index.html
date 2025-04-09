@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmin e Francielly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <style>
+        .swiper-slide img {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+        }
+
+        .swiper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="yasmin.html"><b>Yasmin</b></a></li>
+                    <li><a href="francielly.html"><b>Francielly</b></a></li>
+                    <li><a href="projetos.html"><b>Projetos</b></a></li>
+                    <li><a href="biblioteca.html"><b>Biblioteca</b></a></li>
+                </ul>
+            </nav>
+            <div class="contato">
+                <a href="formulario.html"><button>Contato</button></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="toposite">
+                        <h1>BEM-VINDO AO MUNDO DE YASMIN E FRANCIELLY!</h1>
+                        <p>
+                            Aqui, você vai conhecer mais sobre Yasmin e Francielly, suas histórias, interesses e projetos.
+                            Com uma combinação de criatividade, determinação e paixão pelo que fazem, elas compartilham experiências, ideias e momentos marcantes.
+                            <br><br>
+                            Acompanhe essa jornada e descubra mais sobre quem são, o que as inspira e como elas deixam sua marca no mundo!
+                        </p>
+                        <br>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/duas.jpg" alt="Imagem 1"></div>
+                                <div class="swiper-slide"><img src="img/meet.jpg" alt="Imagem 2"></div>
+                                <div class="swiper-slide"><img src="img/minefran.jpg" alt="Imagem 3"></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>PARA MAIS INFORMAÇÕES</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="yasmin.html">Yasmin</a>
+                <a href="francielly.html">Francielly</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="formulario.html">Contato</a>
+            </nav>
+            <p>&copy; 2025 Site Yasmin e Francielly | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    
+</body>
+</html>
